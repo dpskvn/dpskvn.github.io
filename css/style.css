@@ -1,0 +1,43 @@
+body {
+	font-size: 31px;
+	font-family: 'Just Another Hand', arial, serif;
+	text-shadow: #111 2px 2px 0px;
+	color: #4d4d4d;
+	background: #4d4d4d;
+}
+
+a:link {text-decoration: none; color: #49771d;}
+a:visited {text-decoration: none; color: #49771d;}
+a:active {text-decoration: none; color: #49771d;}
+a:hover {text-decoration: none; color: #fff;}
+a img {border: none; } 
+
+#content {
+	width: 854px;
+	height: 480px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left: -427px;
+	margin-top: -240px;
+	background: #202020;
+}
+
+#left {
+	float: left;
+	width: 320px;
+	background: url('../images/logo.png') no-repeat;
+	height: 480px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+#right {
+	float: right;
+	width: 450px;
+	margin-top: -20px;
+	margin-left: 5px;
+	margin-right: 20px;
+}
