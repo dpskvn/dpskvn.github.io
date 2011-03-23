@@ -43,7 +43,7 @@ a img {border: none; }
 }
 
 #social {
-	position: relative;
-	left: 60%;
-	top: 110px;
+	position: absolute;
+	left: 75%;
+	top: 85%;
 }
