@@ -1,4 +1,5 @@
 body {
+	margin: 0px;
 	font-size: 31px;
 	font-family: 'Just Another Hand', arial, serif;
 	text-shadow: #111 2px 2px 0px;
@@ -12,17 +13,37 @@ a:active {text-decoration: none; color: #49771d;}
 a:hover {text-decoration: none; color: #fff;}
 a img {border: none; } 
 
+#container {
+	width: 100%;
+	height: 100%;
+}
+
 #content {
 	width: 854px;
 	height: 480px;
 	border-radius: 20px;
 	box-shadow: #111 4px 4px 0px;
 	position:absolute;
-	left:50%;
-	top:50%;
+	left: 50%;
+	top: 50%;
 	margin-left: -427px;
 	margin-top: -240px;
 	background: #202020;
+}
+
+#notfound {
+	width: 300px;
+	height: 90px;
+	border-radius: 10px;
+	box-shadow: #111 4px 4px 0px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -25px;
+	background: #202020;
+	text-align: center;
+	padding-top: 10px;
 }
 
 #left {
@@ -46,4 +67,15 @@ a img {border: none; }
 	position: absolute;
 	left: 75%;
 	top: 85%;
+}
+
+#hometab {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	box-shadow: #111 4px 4px 0px;
+	position: absolute;
+	background: #202020;
+	text-align: center;
+	padding-top: 10px;
 }
