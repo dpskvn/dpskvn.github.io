@@ -79,3 +79,6 @@ a img {border: none; }
 	text-align: center;
 	padding-top: 10px;
 }
+ul { 
+	list-style-type: none;
+}
