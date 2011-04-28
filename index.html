@@ -1,44 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Confused Tree</title>
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
-		<script src="https://www.google.com/jsapi?key=ABQIAAAA5oR81U_S6sBPmho74wbWlxRqtq_-jICbgMNAXuQU-i1uvp2yDRSpw84ef4yjGsq-d2ZTAonhW8ZWjQ" type="text/javascript"></script> 
-		<script type="text/javascript"> 
-			google.load("jquery", "1");
-		</script> 
-		<script type="text/javascript">
-		
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-20932760-2']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		
-		</script>
-	</head>
-	<body>
-		<div id="content">
-			<div id="left"></div>
-			<div id="right">
-				<h2>Hello,</h2>
-				My name is Dino. I'm a web developer.<br /><br />
-				Here are some of my projects:
-				<ul>
-					<li><a href="/jEntropy">jEntropy</a> - jQuery powered entropy based random generator</li>
-                                        <li><a href="/mondrian.js">mondrian.js</a> - JavaScript & HTML5 canvas barcode library</li>
-					<li><a href="/WebCraft">WebCraft</a> - a CMS for small businesses</li>
-				</ul>
-				<div id="social">
-					<a href="http://twitter.com/confusedtree"><img src="images/tw.png" /></a>&nbsp;&nbsp;<a href="http://www.facebook.com/dpaskvan"><img src="images/fb.png" /></a>&nbsp;&nbsp;<a href="http://www.last.fm/user/dpaskvan"><img src="images/fm.png" /></a>&nbsp;&nbsp;<a href="http://www.github.com/ConfusedTree"><img src="images/gh.png" /></a>
-				</div>
-			</div>
-		</div>
-	</body>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Confused Tree</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/type.css" type="text/css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="js/jquery.text-effects.js" type="text/javascript"></script>
+  <script src="js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <script type="text/javascript"> 
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-20932760-2']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script> 
+</head>
+<body>
+  <div id="warning">
+    <span style="font-size: 400%">!</span><br>
+    I am sorry, but if you want to view this page, you will have to enable JavaScript.
+  </div>
+  <div id="first">
+    <div class="content">
+      <p>Hello, <span class="nameC"><input type="text" class="name" value="[insert name]"></span></p>
+      <p>I am very pleased to meet you.</p>
+      <p>My name is Dino. I'm a web developer.<br>Welcome to my website.</p>
+      <p>Please, take a look around.</p>
+    </div>
+  </div>
+  <div id="second">
+    <div class="content">
+      <p>I'm a web developer and amateur designer.</p>
+      <p>I've programmed in all environments you can imagine, but web is my one true love.</p>
+      <p>These days I work with PHP, JavaScript and recently Ruby(primarily Rails and Sinatra).</p>
+      <p>And I absolutely <span style="color: rgb(237,28,36)">&#9829;</span> HTML5 and all that comes with it.</p>
+    </div>
+  </div>
+  <div id="third">
+    <div class="content">
+      <p>One of my continuing projects is this web page.</p>
+      <p>Apart from that, I mess around with various web-based technologies.</p>
+      <p>All of my projects are open-source and available on GitHub. Want to help me out<span class="nameC2"></span>?</p>
+      <p><a href="http://github.com/ConfusedTree" class="look">Take a look!</a></p>
+    </div>
+  </div>
+  <div id="fourth"> 
+    <div class="content">
+      <p>Hey<span class="nameC2"></span>, I'd love to touch base with you!<br>You can find me here:</p>
+      <div id="social">
+	        <a href="http://www.facebook.com/dpaskvan" class="socIcon"><img src="images/social/facebook.png"></a>
+	        <a href="http://www.twitter.com/confusedtree" class="socIcon"><img src="images/social/twitter.png"></a>
+	        <a href="http://hr.linkedin.com/in/dpaskvan" class="socIcon"><img src="images/social/linkedin.png"></a>
+	        <a href="http://www.last.fm/user/dpaskvan" class="socIcon"><img src="images/social/lastfm.png"></a>
+      </div>
+    </div>
+  </div>
+  <div id="fifth"> 
+    <div class="content"> 
+      <p>Here's some stuff I made:</p> 
+					<p><a href="/jEntropy" class="look2">jEntropy</a><br><br>jQuery powered entropy based random generator</p>
+          <p><a href="/mondrian.js" class="look2">mondrian.js</a><br><br>JavaScript & HTML5 canvas barcode library</p>
+    </div>
+  </div>
+  <footer>
+    <nav id="menu">
+      <div class="circle color1"><div class="cContent">Hello</div></div>
+      <div class="circle color2"><div class="cContent">About</div></div>
+      <div class="circle color3"><div class="cContent">Projects</div></div>
+      <div class="circle color4"><div class="cContent">Contact</div></div>
+      <div class="circle color5"><div class="cContent">Download</div></div>
+      <div id="logo"><img src="images/logo.png"></div>
+      <div id="copyright">Hand coded and designed by Dino Paskvan<br>&copy; 2011 ConfusedTree.com</div>
+    </nav>
+  </footer>
+</body>
 </html>
