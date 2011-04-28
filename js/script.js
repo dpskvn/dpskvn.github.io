@@ -1,16 +1,27 @@
-Object.prototype.isEmpty = function() {
+$(document).ready(function() {
+  function badBrowser(){
+	if( ($.browser.msie && parseInt($.browser.version) < 9) ||
+	    ($.browser.webkit && parseInt($.browser.version) < 533) ||
+	    ($.browser.mozilla && parseInt($.browser.version) < 2) ||
+	    ($.browser.opera && parseInt($.browser.version) < 11))
+             {return true;}
+	return false;
+ };
+  Object.prototype.isEmpty = function() {
     for (var prop in this) {
         if (this.hasOwnProperty(prop)) return false;
     }
     return true;
-};
-
-$(document).ready(function() {
-  $('#warning').hide();
-  $('#first').show();
-  $('footer').show();
-  $('#logo').hover(
-    function() {
+  };
+  if(badBrowser()) {
+    $('#warning').html('<p>Your browser is old.</p><p>How old?</p><p>Ancient in browser years.</p>Please upgrade it to view this page.');  
+  } else {
+    $('#warning').hide();
+    $('#first').show();
+    $('footer').show();
+    $('nav').show();
+  }
+  $('#logo').hover(function() {
       $('#copyright').fadeIn('slow');
     },
     function() {

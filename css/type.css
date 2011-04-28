@@ -22,15 +22,3 @@
 
 }
 
-@font-face {
-    font-family: 'ComfortaaBold';
-    src: url('fonts/Comfortaa_Bold-webfont.eot');
-    src: url('fonts/Comfortaa_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Comfortaa_Bold-webfont.woff') format('woff'),
-         url('fonts/Comfortaa_Bold-webfont.ttf') format('truetype'),
-         url('fonts/Comfortaa_Bold-webfont.svg#ComfortaaBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
