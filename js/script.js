@@ -33,7 +33,7 @@ $(document).ready(function() {
     };
   });  
   $(".nameC").click(function(){
-    $('.nameC').html('<input type="text" class="name" value="' + $.cookie('confusedTreeName') + '"></input>');
+    $('.nameC').html('<input type="text" class="name" value=""></input>');
     $('.name').focus();
     $('.name').change(function() {
       $.cookie('confusedTreeName', $('.name').val()), { expires: 7};
