@@ -17,7 +17,7 @@ $(document).ready(function() {
       $('#copyright').fadeOut('slow');
     }
   );
-  var storedName = escape($.cookie('confusedTreeName'));
+  var storedName = $.cookie('confusedTreeName');
   if(storedName.isEmpty()) {
     $('.nameC').html('<input type="text" class="name" value="[insert name]"></input>');
   } else {
@@ -25,7 +25,7 @@ $(document).ready(function() {
     $('.nameC2').html(', ' + storedName)
   }
   $('.name').change(function() {
-    $.cookie('confusedTreeName', escape($('.name').val()), { expires: 7});
+    $.cookie('confusedTreeName', $('.name').val(), { expires: 7});
   });
   $(".name").bind("keypress", function(e) {
     if (e.keyCode == 13) {
@@ -36,7 +36,7 @@ $(document).ready(function() {
     $('.nameC').html('<input type="text" class="name" value="' + $.cookie('confusedTreeName') + '"></input>');
     $('.name').focus();
     $('.name').change(function() {
-      $.cookie('confusedTreeName', escape($('.name').val()), { expires: 7});
+      $.cookie('confusedTreeName', $('.name').val()), { expires: 7};
     });
     $('.name').focusout(function() {
       if($.cookie('confusedTreeName').isEmpty()) {
