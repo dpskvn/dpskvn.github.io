@@ -18,6 +18,8 @@ ul {
   text-align: center;
   box-shadow: 0px 0px 5px #111;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border: 1px solid #111;
   background: #222;
   color: #fff;
@@ -38,6 +40,8 @@ ul {
   text-align: center;
   box-shadow: 0px 0px 5px #111;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border: 1px solid #111;
   background: #222;
   color: #fff;
@@ -130,7 +134,7 @@ a img {
   background: rgb(155,139,80);
 }
 
-footer {
+#footer {
   position: absolute;
   width: 100%;
   bottom: 0px;
@@ -146,11 +150,11 @@ footer {
   transition-duration: 0.5s;
 }
 
-footer:hover {
+#footer:hover {
   opacity: 1.0;
 }
 
-nav {
+#menu {
   width: 500px;
   bottom: 0px;
   height: 80px;
@@ -183,6 +187,8 @@ nav {
   height: 70px;
   width: 70px;
   border-radius: 35px;
+  -webkit-border-radius: 35px;
+-moz-border-radius: 35px;
   box-shadow: 0px 0px 1px #111;
   font-size: 14px;
   font-family: 'ComfortaaRegular', Arial, sans-serif;
