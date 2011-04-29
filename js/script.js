@@ -62,6 +62,7 @@ $(document).ready(function() {
       $('#third').fadeOut(1000);
       $('#fourth').fadeOut(1000);
       $('#fifth').fadeOut(1000);
+      favicon.change('images/favicons/favicon.png');
     });
     $('.color2').click(function() {
       $('#first').fadeOut(1000);
@@ -69,6 +70,7 @@ $(document).ready(function() {
       $('#third').fadeOut(1000);
       $('#fourth').fadeOut(1000);
       $('#fifth').fadeOut(1000);
+      favicon.change('images/favicons/favicon2.png');
     });
     $('.color3').click(function() {
       $('#first').fadeOut(1000);
@@ -76,6 +78,7 @@ $(document).ready(function() {
       $('#third').fadeIn(1000);
       $('#fourth').fadeOut(1000);
       $('#fifth').fadeOut(1000);
+      favicon.change('images/favicons/favicon3.png');
     });
     $('.color4').click(function() {
       $('#first').fadeOut(1000);
@@ -83,6 +86,7 @@ $(document).ready(function() {
       $('#third').fadeOut(1000);
       $('#fourth').fadeIn(1000);
       $('#fifth').fadeOut(1000);
+      favicon.change('images/favicons/favicon4.png');
     });
     $('.color5').click(function() {
       $('#first').fadeOut(1000);
@@ -90,6 +94,7 @@ $(document).ready(function() {
       $('#third').fadeOut(1000);
       $('#fourth').fadeOut(1000);
       $('#fifth').fadeIn(1000);
+      favicon.change('images/favicons/favicon5.png');
     });
   };
 });
