@@ -84,6 +84,13 @@
 		margin: auto;
 		margin-top: 200px;
 		opacity: 0.5;
+		-webkit-animation: pulsate 3s ease-out;
+		-webkit-animation-iteration-count: infinite;
+	}
+	@-webkit-keyframes pulsate {
+	    0% {opacity: 0.9;}
+	    50% {opacity: 0.5;}
+	    100% {opacity: 0.9;}
 	}
 	.name {
 		text-align: center;
