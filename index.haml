@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %title= "Dino Paskvan"
+    %meta{ :content => "Dino Paskvan - Web Developer", :name => "description" }
+    %meta{ :content => "Dino Paskvan", :name => "author" }
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0"}
+    %link{ :href => "<!-- @path master.css -->", :media => "screen", :rel => "stylesheet" }
+    %link{ :href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :media => "screen", :rel => "stylesheet" }
+    <!-- @reload -->
+  %body
+    %section.splash
+      .ontrack
+        %span.track On track.
+    
+    %footer
+      .right
+        &copy; 2013 Dino Paskvan
+      .left
+        %a{ :href => "https://twitter.com/DinoPaskvan", :class => "twitter"}
+          %i.icon-twitter
+        %a{ :href => "#", :class => "email"}
+          %i.icon-envelope
+        %a{ :href => "https://github.com/DinoPaskvan", :class => "github"}
+          %i.icon-github
+    
+    <!-- @javascript jquery.min master -->
