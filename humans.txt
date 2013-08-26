@@ -1,0 +1,13 @@
+/* TEAM */
+	Developer/designer: Dino Paskvan
+	Contact: dpaskvan [at] gmail.com
+	Twitter: @dinopaskvan
+	From: Varazdin, Croatia
+
+/* SITE */
+	Last update: 2013/08/26
+	Language: English
+	Standards: HTML5, CSS3
+	Technologies: HAML, SASS, CoffeeScript
+	Components: jQuery 2, animate.css, Google Fonts
+	IDE: Coda 2, Hammer for Mac, Anvil for Mac, Pixelmator
