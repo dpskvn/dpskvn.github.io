@@ -7,29 +7,6 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
     <link href='assets/stylesheets/master.css' media='screen' rel='stylesheet'>
     <link href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' media='screen' rel='stylesheet'>
-    
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
   </head>
   <body>
     <section class='splash'>
@@ -39,16 +16,16 @@
     </section>
     <footer>
       <div class='right'>
-        &copy; 2013 Dino Paskvan
+        &copy; 2014 Dino Paskvan
       </div>
       <div class='left'>
-        <a class='twitter' href='https://twitter.com/DinoPaskvan'>
+        <a class='twitter' href='https://twitter.com/dpskvn'>
           <i class='icon-twitter'></i>
         </a>
         <a class='email' href='#'>
           <i class='icon-envelope'></i>
         </a>
-        <a class='github' href='https://github.com/DinoPaskvan'>
+        <a class='github' href='https://github.com/dpskvn'>
           <i class='icon-github'></i>
         </a>
       </div>
