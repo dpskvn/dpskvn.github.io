@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900|Lora:400,700,400italic,700italic|Source+Code+Pro:400);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora";
+  color: #333;
+  font-size: 16px; }
+
+header {
+  text-align: center;
+  padding-top: 30px; }
+  header h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 900;
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px; }
+  header h2 {
+    font-family: "Source Code Pro";
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 0px; }
+  header h3 {
+    font-family: "Source Code Pro";
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px; }
+
+#logo {
+  stroke-dasharray: 1339;
+  stroke-dashoffset: 1339;
+  -webkit-animation: dash 4s linear forwards, fill 2s 2s linear forwards;
+          animation: dash 4s linear forwards, fill 2s 2s linear forwards;
+  fill: #fff; }
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+@-webkit-keyframes fill {
+  to {
+    fill: #333; } }
+@keyframes fill {
+  to {
+    fill: #333; } }
+.social {
+  font-size: 3rem;
+  text-align: center;
+  padding: 60px; }
+  .social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .social ul li {
+      display: inline-block;
+      padding: 0px 25px 25px 0px; }
+  .social a {
+    -webkit-transition: color 0.4s linear;
+            transition: color 0.4s linear; }
+  .social .twitter {
+    color: #55acee; }
+    .social .twitter:hover {
+      color: #83c3f3; }
+  .social .github {
+    color: #333333; }
+    .social .github:hover {
+      color: #4d4d4d; }
+  .social .mail {
+    color: #dd4b39; }
+    .social .mail:hover {
+      color: #e47365; }
+  .social .linkedin {
+    color: #0976b4; }
+    .social .linkedin:hover {
+      color: #0b96e5; }
