@@ -95,3 +95,92 @@ header {
     }
   }
 }
+
+.projects {
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  h3 {
+    width: 100%;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 1.4rem;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    padding-top: 10px;
+    span.js {
+      display: inline-block;
+      background: #F0DB4F;
+      padding: 5px;
+      border-radius: 10%;
+      font-size: 0.7rem;
+      margin-left: 5px;
+    }
+    span.node {
+      display: inline-block;
+      background: #80BD01;
+      padding: 5px;
+      border-radius: 10%;
+      font-size: 0.7rem;
+      margin-left: 5px;
+    }
+    span.swift {
+      display: inline-block;
+      background: #FC4F33;
+      color: #fff;
+      padding: 5px;
+      border-radius: 10%;
+      font-size: 0.7rem;
+      margin-left: 5px;
+    }
+    span.ios {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 5px;
+      border-radius: 10%;
+      font-size: 0.7rem;
+      margin-left: 5px;
+    }
+    span.svg {
+      display: inline-block;
+      background: #0066B1;
+      color: #fff;
+      padding: 5px;
+      border-radius: 10%;
+      font-size: 0.7rem;
+      margin-left: 5px;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+      &:visited {
+        text-decoration: none;
+        color: #333;
+      }
+      &:active {
+        text-decoration: none;
+        color: #333;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+  }
+    }
+  p {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  hr {
+    width: 30%;
+    border: 1px solid #888;
+  }
+}

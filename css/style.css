@@ -79,3 +79,77 @@ header {
     color: #0976b4; }
     .social .linkedin:hover {
       color: #0b96e5; }
+
+.projects h2 {
+  width: 100%;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 0px;
+  padding-bottom: 10px; }
+.projects h3 {
+  width: 100%;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 1.4rem;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  padding-top: 10px; }
+  .projects h3 span.js {
+    display: inline-block;
+    background: #F0DB4F;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 0.7rem;
+    margin-left: 5px; }
+  .projects h3 span.node {
+    display: inline-block;
+    background: #80BD01;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 0.7rem;
+    margin-left: 5px; }
+  .projects h3 span.swift {
+    display: inline-block;
+    background: #FC4F33;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 0.7rem;
+    margin-left: 5px; }
+  .projects h3 span.ios {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 0.7rem;
+    margin-left: 5px; }
+  .projects h3 span.svg {
+    display: inline-block;
+    background: #0066B1;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 0.7rem;
+    margin-left: 5px; }
+  .projects h3 a {
+    text-decoration: none;
+    color: #333; }
+    .projects h3 a:visited {
+      text-decoration: none;
+      color: #333; }
+    .projects h3 a:active {
+      text-decoration: none;
+      color: #333; }
+    .projects h3 a:hover {
+      text-decoration: underline; }
+.projects p {
+  text-align: center;
+  margin-bottom: 50px; }
+.projects hr {
+  width: 30%;
+  border: 1px solid #888; }
