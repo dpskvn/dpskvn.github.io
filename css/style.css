@@ -160,6 +160,8 @@ header {
   font-weight: 300;
   text-align: center;
   color: #5B236B; }
+  .sourcery header {
+    padding-top: 0; }
   .sourcery h1 {
     font-weight: inherit;
     font-size: 2.4rem; }
@@ -176,7 +178,8 @@ header {
     color: #333; }
   .sourcery .icon {
     width: 200px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-top: 20px; }
   .sourcery .appstore {
     margin: 30px; }
   .sourcery .dplogo {
