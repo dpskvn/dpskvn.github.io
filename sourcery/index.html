@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <title>Sourcery - View HTML, JavaScript and CSS Source Extension and App</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="bxslider/jquery.bxslider.css">
+</head>
+<body class="sourcery">
+  <header>
+   <h1>Sourcery <small>View HTML, JavaScript and CSS</small></h1>
+   <img src="http://www.dinopaskvan.com/sourcery/images/logo.svg" alt="Sourcery icon" class="icon"><br>
+   <a class="appstore" href="https://itunes.apple.com/us/app/sourcery-view-html-source/id924925257?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a> 
+  </header>
+  <section class="sabout">
+    <p>Sourcery allows you to view the source code of web pages (HTML, CSS and JavaScript) while browsing in Safari and other web browsers.</p>
+    <p>You can navigate through different web page assets conveniently by using the folder icon in the navigation bar.</p>
+    <p>It also works as a stand-alone application.</p>
+    <p>It offers two syntax highlighting themes (a dark and a light one), code clipboard copying (escaped and unescaped) and HTML validation. You can also highlight search strings in the source code for easier navigation.</p>
+  </section>
+  <section>
+    <h2>Screenshots</h2>
+    <ul class="bxslider">
+      <li><img src="http://www.dinopaskvan.com/sourcery/images/gallery/1.png" /></li>
+      <li><img src="http://www.dinopaskvan.com/sourcery/images/gallery/2.png" /></li>
+      <li><img src="http://www.dinopaskvan.com/sourcery/images/gallery/3.png" /></li>
+      <li><img src="http://www.dinopaskvan.com/sourcery/images/gallery/4.png" /></li>
+    </ul>
+  </section>
+  <section>
+   <h2>Video</h2>
+   <iframe src="//player.vimeo.com/video/108046051" width="320" height="568" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+  </section>
+  <footer>
+    <div>&copy; 2014 Dino Paskvan</div>
+    <div><img src="http://www.dinopaskvan.com/sourcery/images/dplogo.svg" alt="Dino Paskvan" class="dplogo"></div>
+  </footer>
+ 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="bxslider/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          slideWidth: 320,
+          auto: true
+        });
+      });
+    });
+  </script>
+</body>
+</html>
