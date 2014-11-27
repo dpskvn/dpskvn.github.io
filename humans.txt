@@ -5,9 +5,10 @@
 	From: Varazdin, Croatia
 
 /* SITE */
-	Last update: 2014/08/15
+	Last update: 2014/11/27
 	Language: English
 	Standards: HTML5, CSS3
 	Technologies: SCSS
 	Components: Google Fonts SVG
-	IDE: Sketch, Chocolat
+	IDE: Chocolat
+	Graphics: Sketch
