@@ -6,7 +6,6 @@
   <meta name="apple-itunes-app" content="app-id=924925257"/>
   <title>Sourcery - View HTML, JavaScript and CSS Source Extension and App</title>
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="bxslider/jquery.bxslider.css">
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -19,29 +18,26 @@
   </script>
 </head>
 <body class="sourcery">
-  <header>
-   <h1>Sourcery <small>View HTML, JavaScript and CSS</small></h1>
-   <img src="http://www.dinopaskvan.com/sourcery/images/logo.svg" alt="Sourcery icon" class="icon"><br>
-   <a class="appstore" href="https://itunes.apple.com/us/app/sourcery-view-html-source/id924925257?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a> 
-  </header>
+  <div class="hero">
+    <header>
+      <a href="http://www.dinopaskvan.com"><img src="http://www.dinopaskvan.com/sourcery/images/dplogo.svg" alt="Dino Paskvan" class="dplogo"></a>
+     <h1 class="srcry">Sourcery <small>View HTML, JavaScript and CSS</small></h1>
+    </header>
+  </div>
   <section class="sabout">
+    <div class="appstore-link">
+      <a class="appstore" href="https://itunes.apple.com/us/app/sourcery-view-html-source/id924925257?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+    </div> 
+    <img src="/sourcery/images/icon.svg" alt="Sourcery icon" class="icon">
     <p>Sourcery allows you to view the source code of web pages (HTML, CSS and JavaScript) while browsing in Safari and other web browsers.</p>
     <p>You can navigate through different web page assets conveniently by using the folder icon in the navigation bar.</p>
     <p>It also works as a stand-alone application.</p>
+    <p>The standalone app features a lab mode where you can apply custom CSS styles to web pages or run JavaScript commands in a simple console.</p>
     <p>It offers two syntax highlighting themes (a dark and a light one), code clipboard copying (escaped and unescaped) and HTML validation. You can also highlight search strings in the source code for easier navigation.</p>
     <p>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://itunes.apple.com/us/app/sourcery-view-html-source/id924925257?mt=8&uo=4" data-text="Sourcery - view HTML, JavaScript and CSS on iOS devices" data-via="dpskvn" data-size="large">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.dinopaskvan.com/sourcery/" data-text="Sourcery - view HTML, JavaScript and CSS on iOS devices" data-via="dpskvn" data-size="large">Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </p>
-  </section>
-  <section>
-    <h2>Screenshots</h2>
-    <ul class="bxslider">
-      <li><img src="http://www.dinopaskvan.com/sourcery/images/gallery/1.png" /></li>
-      <li><img src="http://www.dinopaskvan.com/sourcery/images/gallery/2.png" /></li>
-      <li><img src="http://www.dinopaskvan.com/sourcery/images/gallery/3.png" /></li>
-      <li><img src="http://www.dinopaskvan.com/sourcery/images/gallery/4.png" /></li>
-    </ul>
   </section>
   <section>
    <h2>Video</h2>
@@ -49,21 +45,15 @@
   </section>
   <footer>
     <div>&copy; 2014 Dino Paskvan</div>
-    <div><img src="http://www.dinopaskvan.com/sourcery/images/dplogo.svg" alt="Dino Paskvan" class="dplogo"></div>
+    <div><a href="http://www.dinopaskvan.com"><img src="http://www.dinopaskvan.com/sourcery/images/dplogo.svg" alt="Dino Paskvan" class="dplogo"></a></div>
   </footer>
  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="bxslider/jquery.bxslider.min.js"></script>
+  <script src="/sourcery/bxslider/jquery.bxslider.min.js"></script>
   <script src="/js/hooks.js"></script>
   <script>
     $(document).ready(function(){
-      hooks('Sourcery', 'Someone just opened the page.', 'CKk2i9GTVa')
-      $(document).ready(function(){
-        $('.bxslider').bxSlider({
-          slideWidth: 320,
-          auto: true
-        });
-      });
+      hooks('Sourcery', 'Someone just opened the page.', 'CKk2i9GTVa');
     });
   </script>
 </body>

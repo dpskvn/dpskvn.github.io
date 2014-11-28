@@ -97,7 +97,8 @@ header {
   margin: 0;
   margin-top: 30px;
   padding: 0;
-  padding-top: 10px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
   .projects h3 span.js {
     display: inline-block;
     background: #F0DB4F;
@@ -149,42 +150,76 @@ header {
       text-decoration: underline; }
 .projects p {
   text-align: center;
+  max-width: 600px;
+  margin: auto;
   margin-bottom: 50px; }
 .projects hr {
   width: 30%;
   border: 1px solid #888; }
 
+.dplogo {
+  width: 60px; }
+
+footer {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Verdana, sans-serif;
+  color: #333;
+  padding-top: 50px;
+  font-size: 0.8rem;
+  text-align: center; }
+
 .sourcery {
-  background: #F7F7F7;
-  font-family: "Helvetica Neue", "Helvetica", Verdana, sans-serif;
-  font-weight: 300;
+  background: #fff;
   text-align: center;
-  color: #5B236B; }
+  color: #333; }
   .sourcery header {
-    padding-top: 0; }
-  .sourcery h1 {
-    font-weight: inherit;
-    font-size: 2.4rem; }
-    .sourcery h1 small {
-      color: #555;
-      font-size: 1rem; }
-  .sourcery h2 {
-    font-weight: inherit;
-    font-size: 1.8rem; }
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Verdana, sans-serif;
+    padding: 10px;
+    padding-top: 0px;
+    background: rgba(255, 255, 255, 0.8);
+    min-height: 60px; }
+    .sourcery header h1.srcry {
+      font-weight: inherit;
+      display: inline-block;
+      font-size: 2.4rem;
+      font-weight: 900;
+      padding-top: 0px;
+      margin: 0; }
+      .sourcery header h1.srcry small {
+        display: inline-block;
+        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Verdana, sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding: 0;
+        margin: 0; }
+    .sourcery header .dplogo {
+      display: block;
+      margin: auto; }
+  .sourcery .hero {
+    min-height: 500px;
+    height: 100vh;
+    background: url("/sourcery/images/sourcery-mockup.jpg");
+    background-position: center;
+    background-size: cover; }
   .sourcery .sabout {
     margin: auto;
     max-width: 500px;
     padding: 20px;
-    color: #333; }
-  .sourcery .icon {
-    width: 200px;
-    padding-bottom: 20px;
-    padding-top: 20px; }
-  .sourcery .appstore {
-    margin: 30px; }
-  .sourcery .dplogo {
-    width: 60px; }
-  .sourcery footer {
     color: #333;
-    padding-top: 20px;
-    font-size: 0.8rem; }
+    text-align: justify; }
+    .sourcery .sabout .twitter-share-button {
+      display: block;
+      margin: auto;
+      padding: 50px; }
+    .sourcery .sabout .appstore-link {
+      text-align: center; }
+    .sourcery .sabout .appstore {
+      margin-top: 50px;
+      margin-bottom: 50px; }
+  .sourcery .icon {
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px #ccc;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px; }

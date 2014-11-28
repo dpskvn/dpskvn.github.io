@@ -5,7 +5,7 @@
 	From: Varazdin, Croatia
 
 /* SITE */
-	Last update: 2014/11/27
+	Last update: 2014/11/29
 	Language: English
 	Standards: HTML5, CSS3
 	Technologies: SCSS
