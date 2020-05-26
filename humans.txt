@@ -2,13 +2,13 @@
 	Developer/designer: Dino Paskvan
 	Contact: dpaskvan [at] gmail.com
 	Twitter: @dpskvn
-	From: Varazdin, Croatia
+	From: Pozega, Croatia
 
 /* SITE */
-	Last update: 2014/12/18
+	Last update: 2020/5/25
 	Language: English
 	Standards: HTML5, CSS3
 	Technologies: SCSS
 	Components: Google Fonts SVG
-	IDE: Chocolat
+	IDE: VS Code
 	Graphics: Sketch
