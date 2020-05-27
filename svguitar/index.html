@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Strat Animation</title>
+  <style>
+    html, body {
+      background: rgb(49, 49, 49);
+    }
+    section {
+      background: url('img/back.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    section#anim > object {
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 300;
+      animation: 7s ease 0s normal forwards 1 fadeout;
+    }
+    @keyframes fadeout{
+      0% { opacity:1; }
+      66% { opacity:1; }
+      100% { opacity:0; }
+    }
+  </style>
+</head>
+<body>
+  <section id="anim">
+      <object type="image/svg+xml" data="img/strat.svg">
+        Your browser does not support SVG
+      </object>
+  </section>
+</body>
+</html>
