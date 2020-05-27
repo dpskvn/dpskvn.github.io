@@ -51,6 +51,14 @@ ul.social a:hover.gmail {
   background-color: #6b7a8c;
 }
 
+.awethor {
+  background-color: #eeeeee;
+}
+
+.svguitar {
+  background-color: #313131;
+}
+
 #logo {
   stroke-dasharray: 1339;
   stroke-dashoffset: 1339;
