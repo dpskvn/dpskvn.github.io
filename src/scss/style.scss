@@ -1,3 +1,8 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+}
 .bolder{ 
   font-weight: 600;
 }
@@ -6,7 +11,8 @@ ul {
   list-style-type: none;
   li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
+    font-size: 1.6rem;
   }
   &.social {
     a {
@@ -16,14 +22,11 @@ ul {
         &.github {
           color: #333;
         }
-        &.twitter {
-          color: #1da1f2;
-        }
         &.linkedin {
           color: #0077b5;
         }
-        &.gmail {
-          color: #ea4335;
+        &.mail {
+          color: #fff;
         }
       }
     }
