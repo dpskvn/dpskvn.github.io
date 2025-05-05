@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-700 text-gray-100 font-sans scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVGynths | Dino Paškvan's Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <header class="container mx-auto px-4 py-6 animate-slide-down-fade-in">
+        <nav class="flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="../../index.html" class="flex items-center">
+                    <img src="../../assets/logo.svg" alt="Logo" class="h-16 w-auto mr-4" />
+                    <ul>
+                        <li class="leading-tight">
+                            Dino <strong class="font-bold">Paškvan</strong><br />
+                            <span class="text-sm text-gray-400 font-normal">Systems engineer and developer</span>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="https://www.linkedin.com/in/dpaskvan/" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer" class="inline-block transition-transform duration-200 ease-in-out hover:scale-110">
+                    <img src="/assets/icons/linkedin.svg" class="h-6 w-6 align-middle" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/dpskvn/svgynths" aria-label="View Project on GitHub" target="_blank" rel="noopener noreferrer" class="inline-block transition-transform duration-200 ease-in-out hover:scale-110">
+                    <img src="/assets/icons/github.svg" class="h-6 w-6 align-middle" alt="GitHub" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-6 flex-grow animate-fade-in-main opacity-0">
+        <section class="py-6">
+            <h1 class="text-3xl font-bold mb-4 text-center bg-gradient-to-r from-slate-400 to-slate-200 bg-clip-text text-transparent">SVGynths</h1>
+            <h2 class="text-xl font-semibold mb-8 text-center text-slate-400">An SVG experiment with interactive synth icons</h2>
+            
+            <div class="max-w-4xl mx-auto text-gray-300 space-y-8">
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">Description</h3>
+                    <p class="mb-6">
+                        SVGynths is an experimental project exploring the capabilities of SVG for creating interactive, playable synthesizer interfaces directly in the browser. 
+                        The project showcases detailed replicas of classic synthesizers that can be played using your computer keyboard.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-slate-600 text-slate-200">
+                            <img src="/assets/icons/javascript.svg" class="h-4 w-4 mr-2" alt="JavaScript" />
+                            JavaScript
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-slate-600 text-slate-200">
+                            <img src="/assets/icons/svg.svg" class="h-4 w-4 mr-2" alt="SVG" />
+                            SVG
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-slate-600 text-slate-200">
+                            Web Audio API
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-6 text-slate-400">Synthesizer Models</h3>
+                    
+                    <div class="mb-12 text-center">
+                        <h2 class="text-lg font-medium mb-4 text-slate-300">Nord Lead 2x</h2>
+                        <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-6 inline-block border border-slate-600 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-slate-500">
+                            <object type="image/svg+xml" data="nordLead.svg" class="mx-auto w-full max-w-md">
+                                Nord Lead 2x
+                            </object>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 text-center">
+                        <h2 class="text-lg font-medium mb-4 text-slate-300">Minimoog</h2>
+                        <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-6 inline-block border border-slate-600 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-slate-500">
+                            <object type="image/svg+xml" data="miniMoog.svg" class="mx-auto w-full max-w-md">
+                                Minimoog
+                            </object>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">How To Play</h3>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li>Click on a synth icon to "turn it on"</li>
+                        <li>Use your computer keyboard to play notes</li>
+                        <li>The top two rows of letter keys correspond to different notes</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">Technical Details</h3>
+                    <p class="mb-4">This project combines several web technologies:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>SVG for the visual representation of the synthesizers</li>
+                        <li>JavaScript for interactivity and keyboard controls</li>
+                        <li>Web Audio API for generating the synthesizer sounds</li>
+                        <li>Custom event handling for responsive user interactions</li>
+                    </ul>
+                </div>
+                
+                <div class="text-center mt-10">
+                    <a href="../../index.html" role="button" class="inline-block border border-slate-500 text-slate-400 px-6 py-2 rounded font-medium hover:bg-slate-500 hover:text-white transition-colors duration-200">
+                        ← Back to Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container mx-auto px-4 py-6 mt-0 border-t border-gray-600 text-center flex-shrink-0 animate-fade-in-footer opacity-0">
+        <small class="text-gray-400">&copy; 2025</small>
+    </footer>
+</body>
+
+</html>

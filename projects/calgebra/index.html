@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-700 text-gray-100 font-sans scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calgebra | Dino Paškvan's Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <header class="container mx-auto px-4 py-6 animate-slide-down-fade-in">
+        <nav class="flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="../../index.html" class="flex items-center">
+                    <img src="../../assets/logo.svg" alt="Logo" class="h-16 w-auto mr-4" />
+                    <ul>
+                        <li class="leading-tight">
+                            Dino <strong class="font-bold">Paškvan</strong><br />
+                            <span class="text-sm text-gray-400 font-normal">Systems engineer and developer</span>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="https://www.linkedin.com/in/dpaskvan/" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer" class="inline-block transition-transform duration-200 ease-in-out hover:scale-110">
+                    <img src="/assets/icons/linkedin.svg" class="h-6 w-6 align-middle" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/dpskvn/calgebra" aria-label="View Project on GitHub" target="_blank" rel="noopener noreferrer" class="inline-block transition-transform duration-200 ease-in-out hover:scale-110">
+                    <img src="/assets/icons/github.svg" class="h-6 w-6 align-middle" alt="GitHub" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-6 flex-grow animate-fade-in-main opacity-0">
+        <section class="py-6">
+            <h1 class="text-3xl font-bold mb-4 text-center bg-gradient-to-r from-slate-400 to-slate-200 bg-clip-text text-transparent">Calgebra</h1>
+            <h2 class="text-xl font-semibold mb-8 text-center text-slate-400">A CLI tool to sync Algebra Bernays University's student schedule to iCalendar format</h2>
+            
+            <div class="max-w-4xl mx-auto text-gray-300 space-y-8">
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">Description</h3>
+                    <p class="mb-4">
+                        Calgebra is a command-line utility that helps Algebra University College students export their class schedule to the iCalendar (.ics) format. 
+                        This allows students to import their academic schedule into various calendar applications like Google Calendar, Apple Calendar, or Microsoft Outlook.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-slate-600 text-slate-200">
+                            <img src="/assets/icons/deno.svg" class="h-4 w-4 mr-2" alt="Deno" />
+                            Deno
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-slate-600 text-slate-200">
+                            <img src="/assets/icons/typescript.svg" class="h-4 w-4 mr-2" alt="TypeScript" />
+                            TypeScript
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-slate-600 text-slate-200">
+                            CLI Tool
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-slate-600 text-slate-200">
+                            iCalendar
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">Features</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Secure login to Algebra's Infoeduka portal</li>
+                        <li>Fetches scheduled classes</li>
+                        <li>Converts schedule entries to iCalendar format</li>
+                        <li>Generates a standard .ics file with:
+                            <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
+                                <li>Class type and subject</li>
+                                <li>Start and end times</li>
+                                <li>Location (classroom)</li>
+                                <li>Instructor information</li>
+                                <li>Duration details</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">Installation & Usage</h3>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-2 text-slate-300">Prerequisites</h4>
+                        <ul class="list-disc list-inside">
+                            <li><a href="https://deno.land/" class="text-blue-400 hover:underline" target="_blank" rel="noopener">Deno</a> runtime installed on your system</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-2 text-slate-300">Installation</h4>
+                        <div class="bg-slate-800 rounded-md p-4 font-mono text-sm">
+                            <code>git clone https://github.com/dpskvn/calgebra.git<br>cd calgebra</code>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-medium mb-2 text-slate-300">Running the Tool</h4>
+                        <div class="bg-slate-800 rounded-md p-4 mb-4 font-mono text-sm">
+                            <code>deno run --allow-net --allow-write main.ts</code>
+                        </div>
+                        <p class="mb-4">The program will:</p>
+                        <ol class="list-decimal list-inside space-y-1">
+                            <li>Prompt for your Algebra student credentials</li>
+                            <li>Connect to the student portal</li>
+                            <li>Fetch your schedule</li>
+                            <li>Generate an <code class="bg-slate-800 px-1 rounded">algebra-schedule.ics</code> file in the current directory</li>
+                        </ol>
+                        
+                        <h4 class="text-lg font-medium mt-6 mb-2 text-slate-300">Creating a Standalone Executable</h4>
+                        <div class="bg-slate-800 rounded-md p-4 font-mono text-sm">
+                            <code>deno compile --allow-net --allow-write main.ts</code>
+                        </div>
+                        <p class="mt-2">This will provide you with a standalone executable for your platform.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">Technical Details</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-2 text-slate-300">File Structure</h4>
+                        <div class="bg-slate-800 rounded-md p-4 font-mono text-sm whitespace-pre">calgebra/
+├── main.ts        # Main application logic
+├── main_test.ts   # Tests for the main application
+├── date.ts        # Date parsing and formatting utilities
+├── date_test.ts   # Tests for date parsing and formatting
+└── README.md</div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-2 text-slate-300">API Endpoints Used</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Login: <code class="bg-slate-800 px-1 rounded">https://student.algebra.hr/digitalnareferada/api/login</code></li>
+                            <li>Schedule: <code class="bg-slate-800 px-1 rounded">https://student.algebra.hr/digitalnareferada/api/student/raspored/tjedni</code></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-medium mb-2 text-slate-300">Security</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Passwords are securely prompted and not stored</li>
+                            <li>Credentials are only used for authentication with Algebra's servers</li>
+                            <li>No data is sent to third-party services</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">Contributing & License</h3>
+                    <p class="mb-4">Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
+                    
+                    <p class="mb-4">You can run tests with:</p>
+                    <div class="bg-slate-800 rounded-md p-4 mb-6 font-mono text-sm">
+                        <code>deno test</code>
+                    </div>
+                    
+                    <p>This project is licensed under the <a href="https://choosealicense.com/licenses/mit/" class="text-blue-400 hover:underline" target="_blank" rel="noopener">MIT License</a>.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-8 border border-slate-600">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-400">Acknowledgments & Disclaimer</h3>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-2 text-slate-300">Acknowledgments</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Thanks to Algebra Bernays University for providing the (undocumented) API</li>
+                            <li>Built with <a href="https://deno.land/" class="text-blue-400 hover:underline" target="_blank" rel="noopener">Deno</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-medium mb-2 text-slate-300">Disclaimer</h4>
+                        <p>This is an unofficial tool and is not affiliated with Algebra Bernays University. Use at your own risk.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-10">
+                    <a href="../../index.html" role="button" class="inline-block border border-slate-500 text-slate-400 px-6 py-2 rounded font-medium hover:bg-slate-500 hover:text-white transition-colors duration-200">
+                        ← Back to Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container mx-auto px-4 py-6 mt-0 border-t border-gray-600 text-center flex-shrink-0 animate-fade-in-footer opacity-0">
+        <small class="text-gray-400">&copy; 2025</small>
+    </footer>
+</body>
+
+</html>
