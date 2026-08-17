@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        paper: '#FFFFFF',
+        surface: '#FAFAF8',
+        'surface-hover': '#F3F1EC',
+        line: '#E4E1DA',
+        ink: '#15171B',
+        muted: '#6B6F76',
+        accent: '#C2410C',
+      },
       keyframes: {
         slideDownFadeIn: {
           'from': {

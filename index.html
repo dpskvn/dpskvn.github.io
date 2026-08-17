@@ -1,160 +1,154 @@
 <!doctype html>
-<html lang="en" class="bg-slate-700 text-gray-100 font-sans">
+<html lang="en" class="bg-paper text-ink font-sans scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dino Paškvan's Projects</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>Dino Paškvan</title>
+    <meta name="description" content="Systems engineer &amp; developer. Projects and writing from Dino Paškvan." />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+    <link rel="canonical" href="https://paskvan.eu/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dino Paškvan" />
+    <meta property="og:description" content="Systems engineer &amp; developer. Projects and writing from Dino Paškvan." />
+    <meta property="og:url" content="https://paskvan.eu/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Dino Paškvan" />
+    <meta name="twitter:description" content="Systems engineer &amp; developer. Projects and writing from Dino Paškvan." />
+    <link rel="alternate" type="application/rss+xml" title="Dino Paškvan's Blog" href="/feed.xml" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dino Paškvan",
+        "url": "https://paskvan.eu/",
+        "jobTitle": "Systems Engineer & Developer",
+        "sameAs": [
+            "https://www.linkedin.com/in/dpaskvan/",
+            "https://github.com/dpskvn"
+        ]
+    }
+    </script>
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <header class="container mx-auto px-4 py-6 animate-slide-down-fade-in">
+    <header class="container mx-auto px-4 py-6 animate-slide-down-fade-in motion-reduce:animate-none">
         <nav class="flex items-center justify-between">
             <div class="flex items-center">
-                <img src="assets/logo.svg" alt="Logo" class="h-16 w-auto mr-4" />
+                <img src="/assets/logo.svg" alt="Logo" class="h-12 w-auto mr-4" />
                 <ul>
                     <li class="leading-tight">
                         Dino <strong class="font-bold">Paškvan</strong><br />
-                        <span class="text-sm text-gray-400 font-normal">Systems engineer and developer</span>
+                        <span class="text-sm text-muted font-mono">systems engineer &amp; developer</span>
                     </li>
                 </ul>
             </div>
-            <div class="flex items-center space-x-3">
+            <div class="flex items-center space-x-5">
+                <a href="/blog/"
+                    class="font-mono text-sm text-muted hover:text-accent transition-colors duration-200">blog</a>
                 <a href="https://www.linkedin.com/in/dpaskvan/" aria-label="LinkedIn Profile" target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-block transition-transform duration-200 ease-in-out hover:scale-110">
-                    <img src="/assets/icons/linkedin.svg" class="h-6 w-6 align-middle" alt="LinkedIn" />
+                    class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200">
+                    <img src="/assets/icons/linkedin.svg" class="h-5 w-5 align-middle" alt="LinkedIn" />
                 </a>
                 <a href="https://github.com/dpskvn" aria-label="View Project on GitHub" target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-block transition-transform duration-200 ease-in-out hover:scale-110">
-                    <img src="/assets/icons/github.svg" class="h-6 w-6 align-middle" alt="GitHub" />
+                    class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200">
+                    <img src="/assets/icons/github.svg" class="h-5 w-5 align-middle" alt="GitHub" />
                 </a>
             </div>
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-6 flex-grow animate-fade-in-main opacity-0">
+    <main class="container mx-auto px-4 py-6 flex-grow animate-fade-in-main opacity-0 motion-reduce:animate-none motion-reduce:opacity-100">
         <section id="projects" class="py-6">
-            <h2 class="text-2xl font-semibold mb-6">Things I've made</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <p class="font-mono text-sm text-accent mb-2">// projects</p>
+            <h2 class="text-2xl font-semibold mb-8">Things I've made</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <article
-                    class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-6 flex flex-col border border-slate-600 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-slate-500 hover:-translate-y-1 hover:scale-105 hover:-rotate-y-3">
-                    <h3 class="text-xl font-semibold text-slate-400 mb-2">
-                        Stele
+                    class="bg-surface rounded-md p-6 flex flex-col border border-line transition-colors duration-200 ease-in-out hover:border-accent hover:bg-surface-hover">
+                    <h3 class="font-mono text-lg font-semibold text-ink mb-2">
+                        stele
                     </h3>
-                    <p class="text-gray-300 mb-4">
+                    <p class="text-muted mb-6">
                         Homelab dashboard for Kubernetes
                     </p>
-                    <footer class="mt-auto pt-4 flex justify-between items-center">
-                        <a href="#" role="button" disabled
-                            class="inline-block border border-slate-500 text-slate-400 px-4 py-2 rounded font-medium hover:bg-slate-500 hover:text-white transition-colors duration-200 cursor-not-allowed">Coming
-                            soon...</a>
-                        <div>
-                            <object type="image/svg+xml" data="assets/icons/go.svg" title="Go"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                Go
-                            </object>
-                            <object type="image/svg+xml" data="assets/icons/javascript.svg" title="JavaScript"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                JavaScript
-                            </object>
-                            <object type="image/svg+xml" data="assets/icons/kubernetes.svg" title="Kubernetes"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                Kubernetes
-                            </object>
-                        </div>
+                    <footer class="mt-auto pt-4 flex justify-between items-end border-t border-line">
+                        <span class="font-mono text-xs text-muted tracking-wide">go &middot; js &middot; k8s</span>
+                        <span class="font-mono text-sm text-muted cursor-not-allowed">coming soon</span>
                     </footer>
                 </article>
                 <article
-                    class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-6 flex flex-col border border-slate-600 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-slate-500 hover:-translate-y-1 hover:scale-105 hover:-rotate-y-3">
-                    <h3 class="text-xl font-semibold text-slate-400 mb-2">
+                    class="bg-surface rounded-md p-6 flex flex-col border border-line transition-colors duration-200 ease-in-out hover:border-accent hover:bg-surface-hover">
+                    <h3 class="font-mono text-lg font-semibold text-ink mb-2">
                         express-sse
                     </h3>
-                    <p class="text-gray-300 mb-4">
+                    <p class="text-muted mb-6">
                         An Express middleware for quick'n'easy server-sent
                         events
                     </p>
-                    <footer class="mt-auto pt-4 flex justify-between items-center">
-                        <a href="https://www.npmjs.com/package/express-sse" role="button"
-                            class="inline-block border border-slate-500 text-slate-400 px-4 py-2 rounded font-medium hover:bg-slate-500 hover:text-white transition-colors duration-200">Learn
-                            More</a>
-                        <div>
-                            <object type="image/svg+xml" data="assets/icons/javascript.svg" title="JavaScript"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                JavaScript
-                            </object>
-                            <object type="image/svg+xml" data="assets/icons/typescript.svg" title="TypeScript"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                TypeScript
-                            </object>
-                            <object type="image/svg+xml" data="assets/icons/nodedotjs.svg" title="Node.js"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                Node.js
-                            </object>
-                        </div>
+                    <footer class="mt-auto pt-4 flex justify-between items-end border-t border-line">
+                        <span class="font-mono text-xs text-muted tracking-wide">js &middot; ts &middot; node</span>
+                        <a href="https://www.npmjs.com/package/express-sse"
+                            class="font-mono text-sm text-accent hover:underline">learn more &rarr;</a>
                     </footer>
                 </article>
                 <article
-                    class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-6 flex flex-col border border-slate-600 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-slate-500 hover:-translate-y-1 hover:scale-105 hover:-rotate-y-3">
-                    <h3 class="text-xl font-semibold text-slate-400 mb-2">
-                        SVGynths
+                    class="bg-surface rounded-md p-6 flex flex-col border border-line transition-colors duration-200 ease-in-out hover:border-accent hover:bg-surface-hover">
+                    <h3 class="font-mono text-lg font-semibold text-ink mb-2">
+                        svgynths
                     </h3>
-                    <p class="text-gray-300 mb-4">
+                    <p class="text-muted mb-6">
                         Interactive SVG synth icons &mdash; an experiment
                     </p>
-                    <footer class="mt-auto pt-4 flex justify-between items-center">
-                        <a href="/projects/svgynths/" role="button"
-                            class="inline-block border border-slate-500 text-slate-400 px-4 py-2 rounded font-medium hover:bg-slate-500 hover:text-white transition-colors duration-200">Learn
-                            More</a>
-                        <div>
-                            <object type="image/svg+xml" data="assets/icons/javascript.svg" title="JavaScript"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                JavaScript
-                            </object>
-                            <object type="image/svg+xml" data="assets/icons/svg.svg" title="SVG"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                SVG
-                            </object>
-                        </div>
+                    <footer class="mt-auto pt-4 flex justify-between items-end border-t border-line">
+                        <span class="font-mono text-xs text-muted tracking-wide">js &middot; svg</span>
+                        <a href="/projects/svgynths/"
+                            class="font-mono text-sm text-accent hover:underline">learn more &rarr;</a>
                     </footer>
                 </article>
                 <article
-                    class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-md p-6 flex flex-col border border-slate-600 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-slate-500 hover:-translate-y-1 hover:scale-105 hover:-rotate-y-3">
-                    <h3 class="text-xl font-semibold text-slate-400 mb-2">
+                    class="bg-surface rounded-md p-6 flex flex-col border border-line transition-colors duration-200 ease-in-out hover:border-accent hover:bg-surface-hover">
+                    <h3 class="font-mono text-lg font-semibold text-ink mb-2">
                         calgebra
                     </h3>
-                    <p class="text-gray-300 mb-4">
+                    <p class="text-muted mb-6">
                         Fixing something that shouldn't need fixing
                     </p>
-                    <footer class="mt-auto pt-4 flex justify-between items-center">
-                        <a href="/projects/calgebra/" role="button"
-                            class="inline-block border border-slate-500 text-slate-400 px-4 py-2 rounded font-medium hover:bg-slate-500 hover:text-white transition-colors duration-200">Learn
-                            More</a>
-                        <div>
-                            <object type="image/svg+xml" data="assets/icons/typescript.svg" title="TypeScript"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                TypeScript
-                            </object>
-                            <object type="image/svg+xml" data="assets/icons/deno.svg" title="Deno"
-                                class="h-5 w-5 inline-block align-middle mr-1">
-                                Deno
-                            </object>
-                        </div>
+                    <footer class="mt-auto pt-4 flex justify-between items-end border-t border-line">
+                        <span class="font-mono text-xs text-muted tracking-wide">ts &middot; deno</span>
+                        <a href="/projects/calgebra/"
+                            class="font-mono text-sm text-accent hover:underline">learn more &rarr;</a>
                     </footer>
                 </article>
             </div>
         </section>
+
+        <section id="blog" class="py-6">
+            <p class="font-mono text-sm text-accent mb-2">// blog</p>
+            <h2 class="text-2xl font-semibold mb-8">Latest writing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- BLOG_POSTS_START -->
+                <article class="bg-surface rounded-md p-6 flex flex-col border border-line transition-colors duration-200 ease-in-out hover:border-accent hover:bg-surface-hover">
+                    <p class="font-mono text-xs text-muted mb-2">Aug 16, 2026</p>
+                    <h3 class="font-mono text-lg font-semibold text-ink mb-2">Hello, World</h3>
+                    <p class="text-muted mb-6">Kicking off the blog with a quick note on why it exists.</p>
+                    <footer class="mt-auto pt-4 flex justify-between items-end border-t border-line">
+                        <span class="font-mono text-xs text-muted tracking-wide">meta</span>
+                        <a href="/blog/hello-world/" class="font-mono text-sm text-accent hover:underline">read &rarr;</a>
+                    </footer>
+                </article>
+                <!-- BLOG_POSTS_END -->
+            </div>
+            <div class="mt-6">
+                <a href="/blog/" class="font-mono text-sm text-accent hover:underline">all posts &rarr;</a>
+            </div>
+        </section>
     </main>
 
-    <footer class="container mx-auto px-4 py-6 mt-0 text-center flex-shrink-0 animate-fade-in-footer opacity-0">
-        <small class="text-gray-400">&copy; 2025</small>
+    <footer class="container mx-auto px-4 py-6 mt-0 text-center flex-shrink-0 animate-fade-in-footer opacity-0 motion-reduce:animate-none motion-reduce:opacity-100">
+        <small class="font-mono text-muted">&copy; 2026 Dino Paškvan</small>
     </footer>
 </body>
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Dino Paškvan's Blog</title>
+    <link>https://paskvan.eu/blog/</link>
+    <description>Notes on systems and software.</description>
+    <language>en</language>
+    <item>
+      <title>Hello, World</title>
+      <link>https://paskvan.eu/blog/hello-world/</link>
+      <guid>https://paskvan.eu/blog/hello-world/</guid>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Kicking off the blog with a quick note on why it exists.</description>
+    </item>
+  </channel>
+</rss>

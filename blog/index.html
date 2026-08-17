@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="bg-paper text-ink font-sans scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Dino Paškvan</title>
+    <meta name="description" content="Notes on systems and software." />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+    <link rel="canonical" href="https://paskvan.eu/blog/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Blog | Dino Paškvan" />
+    <meta property="og:description" content="Notes on systems and software." />
+    <meta property="og:url" content="https://paskvan.eu/blog/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Blog | Dino Paškvan" />
+    <meta name="twitter:description" content="Notes on systems and software." />
+    <link rel="alternate" type="application/rss+xml" title="Dino Paškvan's Blog" href="/feed.xml" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <header class="container mx-auto px-4 py-6 animate-slide-down-fade-in motion-reduce:animate-none">
+        <nav class="flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="/index.html" class="flex items-center">
+                    <img src="/assets/logo.svg" alt="Logo" class="h-12 w-auto mr-4" />
+                    <ul>
+                        <li class="leading-tight">
+                            Dino <strong class="font-bold">Paškvan</strong><br />
+                            <span class="text-sm text-muted font-mono">systems engineer &amp; developer</span>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="flex items-center space-x-5">
+                <a href="/blog/" class="font-mono text-sm text-muted hover:text-accent transition-colors duration-200">blog</a>
+                <a href="https://www.linkedin.com/in/dpaskvan/" aria-label="LinkedIn Profile" target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200">
+                    <img src="/assets/icons/linkedin.svg" class="h-5 w-5 align-middle" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/dpskvn" aria-label="View GitHub Profile" target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200">
+                    <img src="/assets/icons/github.svg" class="h-5 w-5 align-middle" alt="GitHub" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-6 flex-grow animate-fade-in-main opacity-0 motion-reduce:animate-none motion-reduce:opacity-100">
+        <section class="py-6">
+            <p class="font-mono text-sm text-accent mb-2">// blog</p>
+            <h2 class="text-2xl font-semibold mb-8">Things I've written</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <article class="bg-surface rounded-md p-6 flex flex-col border border-line transition-colors duration-200 ease-in-out hover:border-accent hover:bg-surface-hover">
+                    <p class="font-mono text-xs text-muted mb-2">Aug 16, 2026</p>
+                    <h3 class="font-mono text-lg font-semibold text-ink mb-2">Hello, World</h3>
+                    <p class="text-muted mb-6">Kicking off the blog with a quick note on why it exists.</p>
+                    <footer class="mt-auto pt-4 flex justify-between items-end border-t border-line">
+                        <span class="font-mono text-xs text-muted tracking-wide">meta</span>
+                        <a href="/blog/hello-world/" class="font-mono text-sm text-accent hover:underline">read &rarr;</a>
+                    </footer>
+                </article>
+            </div>
+            <div class="mt-8">
+                <a href="/index.html" class="font-mono text-sm text-accent hover:underline">&larr; back home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="container mx-auto px-4 py-6 mt-0 border-t border-line text-center flex-shrink-0 animate-fade-in-footer opacity-0 motion-reduce:animate-none motion-reduce:opacity-100">
+        <small class="font-mono text-muted">&copy; 2026 Dino Paškvan</small>
+    </footer>
+</body>
+
+</html>
