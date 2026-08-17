@@ -7,6 +7,18 @@
     <title>Not Found | Dino Paškvan</title>
     <meta name="robots" content="noindex" />
     <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <script>
+        (function () {
+            var t = localStorage.getItem("theme");
+            if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            if (t === "dark") document.documentElement.classList.add("dark");
+        })();
+    </script>
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
@@ -15,11 +27,11 @@
         <nav class="flex items-center justify-between">
             <div class="flex items-center">
                 <a href="/index.html" class="flex items-center">
-                    <img src="/assets/logo.svg" alt="Logo" class="h-12 w-auto mr-4" />
+                    <img src="/assets/logo.svg" alt="Logo" class="h-12 w-auto mr-4 dark:invert" />
                     <ul>
-                        <li class="leading-tight">
+                        <li class="leading-tight font-display">
                             Dino <strong class="font-bold">Paškvan</strong><br />
-                            <span class="text-sm text-muted font-mono">systems engineer &amp; developer</span>
+                            <span class="text-sm text-muted font-mono font-normal">systems engineer &amp; developer</span>
                         </li>
                     </ul>
                 </a>
@@ -27,6 +39,14 @@
             <div class="flex items-center space-x-5">
                 <a href="/blog/"
                     class="font-mono text-sm text-muted hover:text-accent transition-colors duration-200">blog</a>
+                <button id="theme-toggle" type="button" aria-label="Toggle dark mode"
+                    class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200 cursor-pointer">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v8" />
+                        <path d="M18.36 6.64a9 9 0 1 1-12.73 0" />
+                    </svg>
+                </button>
                 <a href="https://www.linkedin.com/in/dpaskvan/" aria-label="LinkedIn Profile" target="_blank"
                     rel="noopener noreferrer"
                     class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200">
@@ -35,7 +55,7 @@
                 <a href="https://github.com/dpskvn" aria-label="View GitHub Profile" target="_blank"
                     rel="noopener noreferrer"
                     class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200">
-                    <img src="/assets/icons/github.svg" class="h-5 w-5 align-middle" alt="GitHub" />
+                    <img src="/assets/icons/github.svg" class="h-5 w-5 align-middle dark:invert" alt="GitHub" />
                 </a>
             </div>
         </nav>
@@ -43,7 +63,7 @@
 
     <main class="container mx-auto px-4 py-6 flex-grow flex flex-col items-center justify-center text-center animate-fade-in-main opacity-0 motion-reduce:animate-none motion-reduce:opacity-100">
         <p class="font-mono text-sm text-accent mb-2">// 404</p>
-        <h1 class="text-2xl font-semibold mb-4">Page not found</h1>
+        <h1 class="font-display text-2xl font-semibold mb-4">Page not found</h1>
         <p class="text-muted mb-8">There's nothing here.</p>
         <a href="/index.html" class="font-mono text-sm text-accent hover:underline">&larr; back home</a>
     </main>
@@ -52,6 +72,7 @@
         class="container mx-auto px-4 py-6 mt-0 border-t border-line text-center flex-shrink-0 animate-fade-in-footer opacity-0 motion-reduce:animate-none motion-reduce:opacity-100">
         <small class="font-mono text-muted">&copy; 2026 Dino Paškvan</small>
     </footer>
+    <script src="/assets/site.js" defer></script>
 </body>
 
 </html>

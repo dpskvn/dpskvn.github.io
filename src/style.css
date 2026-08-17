@@ -2,6 +2,35 @@
 @config "../tailwind.config.js";
 @plugin "@tailwindcss/typography";
 
+:root {
+  --c-paper: #FFFFFF;
+  --c-surface: #FAFAF8;
+  --c-surface-hover: #F3F1EC;
+  --c-line: #E4E1DA;
+  --c-ink: #15171B;
+  --c-muted: #6B6F76;
+  --c-accent: #C2410C;
+  --font-display: "Space Grotesk", var(--font-body);
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  color-scheme: light;
+}
+
+html.dark {
+  --c-paper: #0B0D10;
+  --c-surface: #14171B;
+  --c-surface-hover: #1B2025;
+  --c-line: #262B31;
+  --c-ink: #E8EAED;
+  --c-muted: #8B929B;
+  --c-accent: #FF7A45;
+  color-scheme: dark;
+}
+
+body {
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
 @utility prose-site {
   --tw-prose-body: var(--color-muted);
   --tw-prose-headings: var(--color-ink);
@@ -22,7 +51,7 @@
 }
 
 .prose-site :where(h1, h2, h3, h4, h5, h6):not(:where([class~="not-prose"] *)) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: var(--font-display);
 }
 
 .prose-site :where(code):not(:where(pre code, [class~="not-prose"] *)) {

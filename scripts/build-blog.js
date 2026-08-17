@@ -46,17 +46,25 @@ function headerNav() {
         <nav class="flex items-center justify-between">
             <div class="flex items-center">
                 <a href="/index.html" class="flex items-center">
-                    <img src="/assets/logo.svg" alt="Logo" class="h-12 w-auto mr-4" />
+                    <img src="/assets/logo.svg" alt="Logo" class="h-12 w-auto mr-4 dark:invert" />
                     <ul>
-                        <li class="leading-tight">
+                        <li class="leading-tight font-display">
                             Dino <strong class="font-bold">Paškvan</strong><br />
-                            <span class="text-sm text-muted font-mono">systems engineer &amp; developer</span>
+                            <span class="text-sm text-muted font-mono font-normal">systems engineer &amp; developer</span>
                         </li>
                     </ul>
                 </a>
             </div>
             <div class="flex items-center space-x-5">
                 <a href="/blog/" class="font-mono text-sm text-muted hover:text-accent transition-colors duration-200">blog</a>
+                <button id="theme-toggle" type="button" aria-label="Toggle dark mode"
+                    class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200 cursor-pointer">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v8" />
+                        <path d="M18.36 6.64a9 9 0 1 1-12.73 0" />
+                    </svg>
+                </button>
                 <a href="https://www.linkedin.com/in/dpaskvan/" aria-label="LinkedIn Profile" target="_blank"
                     rel="noopener noreferrer"
                     class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200">
@@ -65,7 +73,7 @@ function headerNav() {
                 <a href="https://github.com/dpskvn" aria-label="View GitHub Profile" target="_blank"
                     rel="noopener noreferrer"
                     class="inline-block opacity-60 hover:opacity-100 transition-opacity duration-200">
-                    <img src="/assets/icons/github.svg" class="h-5 w-5 align-middle" alt="GitHub" />
+                    <img src="/assets/icons/github.svg" class="h-5 w-5 align-middle dark:invert" alt="GitHub" />
                 </a>
             </div>
         </nav>
@@ -99,6 +107,18 @@ function page({ title, description, url, body }) {
     <meta name="twitter:title" content="${title} | Dino Paškvan" />
     <meta name="twitter:description" content="${desc}" />
     <link rel="alternate" type="application/rss+xml" title="Dino Paškvan's Blog" href="/feed.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <script>
+        (function () {
+            var t = localStorage.getItem("theme");
+            if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            if (t === "dark") document.documentElement.classList.add("dark");
+        })();
+    </script>
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
@@ -108,6 +128,7 @@ ${headerNav()}
 ${body}
 
 ${footer()}
+    <script src="/assets/site.js" defer></script>
 </body>
 
 </html>
@@ -121,7 +142,7 @@ function postPage(post) {
   const body = `    <main class="container mx-auto px-4 py-6 flex-grow animate-fade-in-main opacity-0 motion-reduce:animate-none motion-reduce:opacity-100">
         <section class="py-6">
             <p class="font-mono text-sm text-accent mb-2 text-center">// blog / ${post.slug}</p>
-            <h1 class="font-mono text-3xl font-bold mb-3 text-center text-ink">${post.title}</h1>
+            <h1 class="font-display text-3xl font-bold mb-3 text-center text-ink">${post.title}</h1>
             <p class="font-mono text-sm text-muted text-center mb-8">${formatDate(post.date)}</p>
 
             <div class="max-w-3xl mx-auto">
@@ -144,8 +165,8 @@ ${post.html}
 }
 
 function postCard(post) {
-  return `                <article class="bg-surface rounded-md p-6 flex flex-col border border-line transition-colors duration-200 ease-in-out hover:border-accent hover:bg-surface-hover">
-                    <p class="font-mono text-xs text-muted mb-2">${formatDate(post.date)}</p>
+  return `                <article class="bg-surface rounded-md p-6 flex flex-col border border-l-2 border-line border-l-accent transition-colors duration-200 ease-in-out hover:border-accent hover:bg-surface-hover">
+                    <p class="font-mono text-xs text-muted mb-2">[${formatDate(post.date)}]</p>
                     <h3 class="font-mono text-lg font-semibold text-ink mb-2">${post.title}</h3>
                     <p class="text-muted mb-6">${post.description}</p>
                     <footer class="mt-auto pt-4 flex justify-between items-end border-t border-line">
@@ -162,7 +183,7 @@ function blogIndexPage(posts) {
   const body = `    <main class="container mx-auto px-4 py-6 flex-grow animate-fade-in-main opacity-0 motion-reduce:animate-none motion-reduce:opacity-100">
         <section class="py-6">
             <p class="font-mono text-sm text-accent mb-2">// blog</p>
-            <h2 class="text-2xl font-semibold mb-8">Things I've written</h2>
+            <h2 class="font-display text-2xl font-semibold mb-8">Things I've written</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 ${cards}
             </div>
