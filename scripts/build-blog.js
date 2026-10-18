@@ -12,7 +12,15 @@ const BLOG_DIR = path.join(ROOT, "blog");
 const HOME_FILE = path.join(ROOT, "index.html");
 const SITE_URL = "https://paskvan.eu";
 
-const STATIC_PAGES = ["/", "/blog/", "/projects/calgebra/", "/projects/svgynths/"];
+const STATIC_PAGES = [
+  "/",
+  "/blog/",
+  "/projects/walletcast/",
+  "/projects/walletcast/support/",
+  "/projects/walletcast/privacy/",
+  "/projects/calgebra/",
+  "/projects/svgynths/",
+];
 
 const formatDate = (date) =>
   new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
